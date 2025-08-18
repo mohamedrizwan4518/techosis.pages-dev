@@ -241,6 +241,16 @@ a {
   }
 }
 
+#billboard .swiper-pagination-bullet {
+    background: #2B1700 !important;
+    /* your chosen color */
+    opacity: 0.5;
+}
+
+#billboard .swiper-pagination-bullet-active {
+    background: #2B1700 !important;
+    opacity: 1;
+
 #billboard {
   background-color: var(--background-color);
   padding-top: 5rem;
@@ -1883,6 +1893,7 @@ a.btn-link.text-light:after {
     color: #6a6a6a;
     font-weight: 500;
 }
+
 
 
 
