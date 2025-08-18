@@ -224,7 +224,33 @@
             </div>
         </div>
     </div>
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const searchPopup = document.querySelector(".search-popup");
+            const closeBtn = document.querySelector(".close-search-btn");
+            const searchLinks = document.querySelectorAll(".search-content a");
 
+            // Example: open the popup with a button (replace #open-search with your trigger button)
+            const openBtn = document.querySelector("#open-search");
+            if (openBtn) {
+                openBtn.addEventListener("click", () => {
+                    searchPopup.classList.add("active");
+                });
+            }
+
+            // Close with X button
+            closeBtn.addEventListener("click", () => {
+                searchPopup.classList.remove("active");
+            });
+
+            // Hide popup after clicking a link
+            searchLinks.forEach(link => {
+                link.addEventListener("click", function() {
+                    searchPopup.classList.remove("active");
+                });
+            });
+        });
+    </script>
 
     <nav class="navbar navbar-expand-lg bg-light text-uppercase fs-6 p-3 border-bottom align-items-center">
         <div class="container-fluid">
@@ -1621,3 +1647,4 @@
 
 
 </html>
+
