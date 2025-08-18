@@ -563,7 +563,23 @@
 
     </section>
 
-    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var swiper = new Swiper(".main-swiper", {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: ".icon-arrow-right",
+                    prevEl: ".icon-arrow-left",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true, // so you can click dots to navigate
+                },
+            });
+        });
+    </script> 
     <!-- Features Section -->
     <section class="py-20">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -1650,6 +1666,7 @@
 
 
 </html>
+
 
 
 
