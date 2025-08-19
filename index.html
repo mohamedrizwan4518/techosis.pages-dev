@@ -33,6 +33,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -207,7 +209,7 @@
                 <div id="search-results-dropdown" class="search-results-dropdown"></div>
             </div>
 
-             <div class="search-content">
+            <div class="search-content">
                 <h5 class="content-title">Trending Now</h5>
                 <ul class="content-list trending-list">
                     <li><a href="#ui-ux-design">UI/UX Design</a></li>
@@ -224,8 +226,8 @@
             </div>
         </div>
     </div>
-<script>
-        document.addEventListener("DOMContentLoaded", function() {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
             const searchPopup = document.querySelector(".search-popup");
             const closeBtn = document.querySelector(".close-search-btn");
             const searchLinks = document.querySelectorAll(".search-content a");
@@ -245,7 +247,7 @@
 
             // Hide popup after clicking a link
             searchLinks.forEach(link => {
-                link.addEventListener("click", function() {
+                link.addEventListener("click", function () {
                     searchPopup.classList.remove("active");
                 });
             });
@@ -564,7 +566,7 @@
     </section>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             var swiper = new Swiper(".main-swiper", {
                 loop: true,
                 slidesPerView: 1,
@@ -579,7 +581,7 @@
                 },
             });
         });
-    </script> 
+    </script>
     <!-- Features Section -->
     <section class="py-20">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -737,7 +739,8 @@
                     <p class="text-lg text-gray-600 leading-relaxed mb-6">
                         At Techosis, we specialize in crafting modern, responsive, and high-performance websites that
                         help brands stand out in the digital world. Our journey began with a simple mission — to combine
-                        creativity and technology in delivering custom web solutions that drive real results.
+                        creativity and technology in delivering custom web solutions
+                        that drive real results.
                     </p>
                     <p class="text-lg text-gray-600 leading-relaxed mb-8">
                         From corporate websites and e-commerce platforms to custom web applications, we’ve worked with
@@ -757,7 +760,7 @@
         </div>
     </section>
 
-        <section id="heads" class="py-20">
+    <section id="heads" class="py-20">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Team Section Content -->
             <div class="text-center mb-16">
@@ -770,14 +773,20 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 justify-center">
                 <!-- Founder Card: Mohamed Rizwan -->
-                <div class="rounded-xl overflow-hidden shadow-lg p-6 text-center transform transition-all duration-300 team-card-hover" style="background-color: #ecad6f;">
+                <div class="rounded-xl overflow-hidden shadow-lg p-6 text-center transform transition-all duration-300 team-card-hover"
+                    style="background-color: #ecad6f;">
                     <!-- Placeholder image to replace img/founder.png -->
-                    <img src="img/founder.png" alt="Mohamed Rizwan" class="w-48 h-48 rounded-full mx-auto object-cover border-4 border-gray-200 mb-6">
+                    <img src="img/founder.png" alt="Mohamed Rizwan"
+                        class="w-48 h-48 rounded-full mx-auto object-cover border-4 border-gray-200 mb-6">
                     <h5 class="text-xl font-bold text-gray-1500 mb-1">MOHAMED RIZWAN</h5>
-                    <p class="text-sm text-gray-1500 font-medium mb-4">Expert in Web Design & Development | UI/UX Designer <br> Turning ideas into engaging digital experiences.</p>
-                    <a href="https://www.linkedin.com/in/mohamed-rizwan-r-769015324/" class="inline-block text-black-1000 transition-colors duration-300 linkedin-link">
+                    <p class="text-sm text-gray-1500 font-medium mb-4">Expert in Web Design & Development | UI/UX
+                        Designer <br> Turning ideas into engaging digital experiences.</p>
+                    <a href="https://www.linkedin.com/in/mohamed-rizwan-r-769015324/"
+                        class="inline-block text-black-1000 transition-colors duration-300 linkedin-link">
                         <!-- LinkedIn SVG icon -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-linkedin">
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                             <rect width="4" height="12" x="2" y="9" />
                             <circle cx="4" cy="4" r="2" />
@@ -786,14 +795,21 @@
                 </div>
 
                 <!-- Founder Card: Kanimozhi -->
-                <div class="rounded-xl overflow-hidden shadow-lg p-6 text-center transform transition-all duration-300 team-card-hover" style="background-color: #ecad6f;">
+                <div class="rounded-xl overflow-hidden shadow-lg p-6 text-center transform transition-all duration-300 team-card-hover"
+                    style="background-color: #ecad6f;">
                     <!-- Placeholder image to replace img/CEO.jpg -->
-                    <img src="img/CEO.jpg" alt="Kanimozhi" class="w-48 h-48 rounded-full mx-auto object-cover border-4 border-gray-200 mb-6">
-                    <h5 href="#https://www.linkedin.com/in/kanimozhi-v-9a7528291/" class="text-xl font-bold text-gray-1500 mb-1">KANIMOZHI</h5>
-                    <p class="text-sm text-gray-1500 font-medium mb-4">Specialist in Web Design & Development | Digital Marketing Expert <br> Crafting impactful online experiences.</p>
-                    <a href="https://www.linkedin.com/in/kanimozhi-v-9a7528291/" class="inline-block text-black-1000 transition-colors duration-300 linkedin-link">
+                    <img src="img/CEO.jpg" alt="Kanimozhi"
+                        class="w-48 h-48 rounded-full mx-auto object-cover border-4 border-gray-200 mb-6">
+                    <h5 href="#https://www.linkedin.com/in/kanimozhi-v-9a7528291/"
+                        class="text-xl font-bold text-gray-1500 mb-1">KANIMOZHI</h5>
+                    <p class="text-sm text-gray-1500 font-medium mb-4">Specialist in Web Design & Development | Digital
+                        Marketing Expert <br> Crafting impactful online experiences.</p>
+                    <a href="https://www.linkedin.com/in/kanimozhi-v-9a7528291/"
+                        class="inline-block text-black-1000 transition-colors duration-300 linkedin-link">
                         <!-- LinkedIn SVG icon -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-linkedin">
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                             <rect width="4" height="12" x="2" y="9" />
                             <circle cx="4" cy="4" r="2" />
@@ -815,19 +831,24 @@
                 <!-- Value 1: Vision -->
                 <div class="bg-white rounded-xl shadow-lg p-8 transform transition-all duration-300 values-card-hover">
                     <div class="flex justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye text-indigo-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-eye text-indigo-500">
                             <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
                             <circle cx="12" cy="12" r="3" />
                         </svg>
                     </div>
                     <h5 class="text-2xl font-bold text-gray-900 mb-2">Vision</h5>
-                    <p class="text-gray-600 leading-relaxed">We turn forward-thinking concepts into actionable digital realities, ensuring your brand is always ahead of the curve.</p>
+                    <p class="text-gray-600 leading-relaxed">We turn forward-thinking concepts into actionable digital
+                        realities, ensuring your brand is always ahead of the curve.</p>
                 </div>
 
                 <!-- Value 2: Precision -->
                 <div class="bg-white rounded-xl shadow-lg p-8 transform transition-all duration-300 values-card-hover">
                     <div class="flex justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mouse-pointer-click text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-mouse-pointer-click text-blue-500">
                             <path d="m9 9 5 5" />
                             <path d="M13.5 1.5 18 6l-4.5 4.5" />
                             <path d="M17.5 17.5 22 22" />
@@ -836,20 +857,24 @@
                         </svg>
                     </div>
                     <h5 class="text-2xl font-bold text-gray-900 mb-2">Precision</h5>
-                    <p class="text-gray-600 leading-relaxed">Our commitment to meticulous detail ensures every project is pixel-perfect, flawlessly functional, and built to last.</p>
+                    <p class="text-gray-600 leading-relaxed">Our commitment to meticulous detail ensures every project
+                        is pixel-perfect, flawlessly functional, and built to last.</p>
                 </div>
 
                 <!-- Value 3: Growth -->
                 <div class="bg-white rounded-xl shadow-lg p-8 transform transition-all duration-300 values-card-hover">
                     <div class="flex justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up text-green-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-trending-up text-green-500">
                             <polyline points="18 13 22 9 18 5" />
                             <path d="M2 14v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
                             <line x1="12" x2="12" y1="2" y2="12" />
                         </svg>
                     </div>
                     <h5 class="text-2xl font-bold text-gray-900 mb-2">Growth</h5>
-                    <p class="text-gray-600 leading-relaxed">We build scalable solutions that grow with your business, empowering you to adapt and succeed in a dynamic market.</p>
+                    <p class="text-gray-600 leading-relaxed">We build scalable solutions that grow with your business,
+                        empowering you to adapt and succeed in a dynamic market.</p>
                 </div>
             </div>
         </div>
@@ -1154,7 +1179,7 @@
 
 
 
-   <section id="Feedback" class="testimonials py-5 bg-light">
+    <section id="Feedback" class="testimonials py-5 bg-light">
         <div class="section-header text-center mt-5">
             <h3 class="section-title">HAPPY CLIENTS, HAPPY CODE!</h3>
         </div>
@@ -1163,7 +1188,8 @@
                 <div class="swiper-slide">
                     <div class="testimonial-item text-center">
                         <blockquote>
-                            <p>“Turned our outdated site into a modern, mobile-friendly platform — way better than we imagined.”</p>
+                            <p>“Turned our outdated site into a modern, mobile-friendly platform — way better than we
+                                imagined.”</p>
                             <div class="review-title text-uppercase">WebWorks</div>
                         </blockquote>
                     </div>
@@ -1171,7 +1197,8 @@
                 <div class="swiper-slide">
                     <div class="testimonial-item text-center">
                         <blockquote>
-                            <p>“Delivered a modern website that boosted our online leads by 50% — clean design and flawless functionality.”</p>
+                            <p>“Delivered a modern website that boosted our online leads by 50% — clean design and
+                                flawless functionality.”</p>
                             <div class="review-title text-uppercase">TechEdge</div>
                         </blockquote>
                     </div>
@@ -1179,7 +1206,8 @@
                 <div class="swiper-slide">
                     <div class="testimonial-item text-center">
                         <blockquote>
-                            <p>“Creative ideas, pixel-perfect design, and super smooth user experience — highly recommend!”</p>
+                            <p>“Creative ideas, pixel-perfect design, and super smooth user experience — highly
+                                recommend!”</p>
                             <div class="review-title text-uppercase">Denim craze</div>
                         </blockquote>
                     </div>
@@ -1187,7 +1215,8 @@
                 <div class="swiper-slide">
                     <div class="testimonial-item text-center">
                         <blockquote>
-                            <p>“More than expected — responsive design, fast delivery, and clear communication throughout the project.”</p>
+                            <p>“More than expected — responsive design, fast delivery, and clear communication
+                                throughout the project.”</p>
                             <div class="review-title text-uppercase">Code & Coffee</div>
                         </blockquote>
                     </div>
@@ -1332,8 +1361,8 @@
         <!-- Section Header -->
 
         <div class="text-center mb-12">
-                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900">Our Certifications</h2>
-            </div>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900">Our Certifications</h2>
+        </div>
 
         <!-- Certifications Grid -->
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -1345,10 +1374,12 @@
                         <span class="text-gray-500 font-normal">/ Mar 15, 2024</span>
                     </div>
                     <h5 class="text-2xl font-bold text-gray-800 tracking-tight">
-                        <a href="#" class="hover:text-indigo-600 transition-colors duration-300">Certified Full Stack Web Developer</a>
+                        <a href="#" class="hover:text-indigo-600 transition-colors duration-300">Certified Full Stack
+                            Web Developer</a>
                     </h5>
                     <p class="text-gray-600 leading-relaxed">
-                        Mastered front-end and back-end technologies to build responsive, high-performance web applications.
+                        Mastered front-end and back-end technologies to build responsive, high-performance web
+                        applications.
                     </p>
                 </div>
             </article>
@@ -1361,10 +1392,12 @@
                         <span class="text-gray-500 font-normal">/ Dec 10, 2023</span>
                     </div>
                     <h5 class="text-2xl font-bold text-gray-800 tracking-tight">
-                        <a href="#" class="hover:text-indigo-600 transition-colors duration-300">Professional Web Development Program</a>
+                        <a href="#" class="hover:text-indigo-600 transition-colors duration-300">Professional Web
+                            Designer</a>
                     </h5>
                     <p class="text-gray-600 leading-relaxed">
-                        Completed intensive training in HTML, CSS, JavaScript, and modern frameworks for dynamic web solutions.
+                        Completed intensive training in HTML, CSS, JavaScript, and modern frameworks for dynamic web
+                        solutions.
                     </p>
                 </div>
             </article>
@@ -1377,7 +1410,8 @@
                         <span class="text-gray-500 font-normal">/ Jan 25, 2024</span>
                     </div>
                     <h5 class="text-2xl font-bold text-gray-800 tracking-tight">
-                        <a href="#" class="hover:text-indigo-600 transition-colors duration-300">Certified Digital Marketing Specialist</a>
+                        <a href="#" class="hover:text-indigo-600 transition-colors duration-300">Certified Digital
+                            Marketing Specialist</a>
                     </h5>
                     <p class="text-gray-600 leading-relaxed">
                         Gained expertise in SEO, content marketing, social media strategies, and online brand promotion.
@@ -1388,189 +1422,295 @@
     </section>
 
 
-    <section id="contact" style="background: url(images/pattern-bg.png) no-repeat;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 py-5 my-5">
-                    <div class="subscribe-header text-center pb-3">
-                        <h3 id="Contact" class="section-title text-uppercase">Contact Us</h3>
+    <section id="contact" class="bg-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 id="Contact" class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-wide uppercase">
+                    Contact Us
+                </h3>
+                <p class="text-gray-600 mt-2">We’d love to hear from you. Let’s build something great together.</p>
+            </div>
+
+            <!-- Contact Card with #ecad6f background -->
+            <div class="max-w-3xl mx-auto rounded-2xl p-8 shadow-xl border border-gray-200 transition-transform transform hover:scale-[1.01] duration-300"
+                style="background-color:#ecad6f;">
+                <form action="https://formspree.io/f/mpwlevgo" method="POST"
+                    class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <!-- Full Name -->
+                    <div class="col-span-1">
+                        <label for="full-name" class="block text-sm font-medium text-gray-800">Full Name</label>
+                        <input type="text" id="full-name" name="name" placeholder="Enter your full name"
+                            class="mt-2 w-full p-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white text-gray-900"
+                            required>
                     </div>
-                    <form action=https://formspree.io/f/mkgzyvgj method="POST" class="d-flex flex-wrap gap-2">
-                        <input type="Name" name="text" placeholder="Your Full Name "
-                            class="form-control form-control-lg" required>
-                        <input type="email" name="email" placeholder="Your Email Address"
-                            class="form-control form-control-lg" required>
-                        <input type="number" name="number" placeholder="Your Contact Number"
-                            class="form-control form-control-lg" required>
-                        <button class="btn btn-dark btn-lg text-uppercase w-100" type="submit">Send</button>
-                    </form>
 
+                    <!-- Email -->
+                    <div class="col-span-1">
+                        <label for="email-address" class="block text-sm font-medium text-gray-800">Email Address</label>
+                        <input type="email" id="email-address" name="email" placeholder="Enter your email"
+                            class="mt-2 w-full p-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white text-gray-900"
+                            required>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="col-span-1">
+                        <label for="contact-number" class="block text-sm font-medium text-gray-800">Phone Number</label>
+                        <input type="tel" id="contact-number" name="phone" placeholder="Optional"
+                            class="mt-2 w-full p-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white text-gray-900">
+                    </div>
+
+                    <!-- Service Selection -->
+                    <div class="col-span-1">
+                        <label for="service" class="block text-sm font-medium text-gray-800">Select a Service</label>
+                        <select id="service" name="service"
+                            class="mt-2 w-full p-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white text-gray-900"
+                            required>
+                            <option value="" disabled selected>Select a Service</option>
+                            <option value="web-design">Web Design</option>
+                            <option value="ui-ux-design">UI/UX Design</option>
+                            <option value="digital-marketing">Digital Marketing</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Other Service -->
+                    <div id="other-service-container" class="hidden col-span-2">
+                        <label for="other-service" class="block text-sm font-medium text-gray-800">Other Service</label>
+                        <input type="text" id="other-service" name="other-service" placeholder="Please specify"
+                            class="mt-2 w-full p-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white text-gray-900">
+                    </div>
+
+                    <!-- Message -->
+                    <div class="col-span-2">
+                        <label for="message" class="block text-sm font-medium text-gray-800">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message..."
+                            class="mt-2 w-full p-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white text-gray-900"
+                            required></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="col-span-2">
+                        <button type="submit"
+                            class="w-full py-3 px-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold text-lg rounded-xl shadow-md hover:from-blue-700 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300">
+                            🚀 Send Message
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script to show "Other" service input -->
+    <script>
+        document.getElementById("service").addEventListener("change", function () {
+            const otherServiceContainer = document.getElementById("other-service-container");
+            if (this.value === "other") {
+                otherServiceContainer.classList.remove("hidden");
+            } else {
+                otherServiceContainer.classList.add("hidden");
+            }
+        });
+    </script>
+
+
+
+    <section id="find-us" class="relative bg-gradient-to-r from-orange-50 via-white to-orange-100 py-20 px-6">
+        <div class="container mx-auto">
+            <!-- Heading -->
+            <div class="text-center mb-14">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-wide">
+                    🌍 Find Us & Stay Connected
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    We'd love to hear from you! Visit our office or follow us on social media to get the latest updates.
+                </p>
+            </div>
+
+            <!-- Main Card -->
+            <div
+                class="bg-[#ecad6f] bg-opacity-90 rounded-3xl shadow-2xl overflow-hidden p-10 lg:p-14 border border-orange-200 backdrop-blur-md">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                    <!-- Map Section -->
+                    <div data-aos="fade-right">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-5">📍 Our Location</h3>
+                        <div class="overflow-hidden rounded-2xl aspect-video shadow-lg border border-gray-200">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62456.14570459306!2d79.735251376962!3d11.939212319999358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5361ab8e49cfcf%3A0xcc6bd326d2f0b04e!2sPuducherry%2C%20India!5e0!3m2!1sen!2sus!4v1755575848659!5m2!1sen!2sus"
+                                width="800" height="700" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Contact + Socials -->
+                    <div class="space-y-8" data-aos="fade-left">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-5">📞 Contact Info & Socials</h3>
+
+                        <!-- Address -->
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-orange-600 shadow-md">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-900 font-medium">Address</p>
+                                <p class="text-gray-700">Pondicherry,India</p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-teal-600 shadow-md">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-900 font-medium">Email</p>
+                                <p class="text-gray-700">techosis.in@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-blue-600 shadow-md">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-900 font-medium">Phone</p>
+                                <p class="text-gray-700">+91 9360496365</p>
+                            </div>
+                        </div>
+
+                        <!-- Socials -->
+                        <div class="pt-4">
+                            <h4 class="text-xl font-semibold text-gray-900 mb-5">Follow Us</h4>
+                            <div class="flex space-x-5">
+                                <a href="#"
+                                    class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-gray-700 shadow-lg">
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-pink-600 shadow-lg">
+                                    <i class="fab fa-instagram text-2xl"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/techosisindian/?viewAsMember=true" class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-blue-700 shadow-lg">
+                                    <i class="fab fa-linkedin-in text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="instagram position-relative">
-        <div class="d-flex justify-content-center w-100 position-absolute bottom-0 z-1">
-            <a href="https://www.instagram.com/templatesjungle/" class="btn btn-dark px-5">Follow us on Instagram</a>
-        </div>
-        <div class="row g-0">
-            <div class="col-6 col-sm-4 col-md-2">
-                <div class="insta-item">
-                    <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-                        <img src="images/insta-item1.jpg" alt="instagram" class="insta-image img-fluid">
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2">
-                <div class="insta-item">
-                    <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-                        <img src="images/insta-item2.jpg" alt="instagram" class="insta-image img-fluid">
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2">
-                <div class="insta-item">
-                    <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-                        <img src="images/insta-item3.jpg" alt="instagram" class="insta-image img-fluid">
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2">
-                <div class="insta-item">
-                    <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-                        <img src="images/insta-item4.jpg" alt="instagram" class="insta-image img-fluid">
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2">
-                <div class="insta-item">
-                    <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-                        <img src="images/insta-item5.jpg" alt="instagram" class="insta-image img-fluid">
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2">
-                <div class="insta-item">
-                    <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-                        <img src="images/insta-item6.jpg" alt="instagram" class="insta-image img-fluid">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <footer id="footer" class="mt-5">
+
+
+
+    <footer id="footer" class="mt-5" style="background: linear-gradient(135deg, #ecad6f, #f7d9b6); color: #2c2c2c;">
         <div class="container">
             <div class="row d-flex flex-wrap justify-content-between py-5">
-                <div class="col-md-3 col-sm-6">
+
+                <!-- Logo + Intro -->
+                <div class="col-md-3 col-sm-6 mb-4">
                     <div class="footer-menu footer-menu-001">
                         <div class="footer-intro mb-4">
                             <a href="index.html">
-                                <img src="images/main-logo.png" alt="logo">
+                                <img src="images/main-logo.png" alt="logo" style="max-width:150px;">
                             </a>
                         </div>
-                        <p>“We create innovative, user-friendly websites tailored to your needs. Our services include
-                            web development, UI/UX design, SEO, and full digital support.”</p>
-                        <div class="social-links">
-                            <ul class="list-unstyled d-flex flex-wrap gap-3">
+                        <p style="line-height:1.6;">
+                            “We create innovative, user-friendly websites tailored to your needs.
+                            Our services include web development, UI/UX design, SEO, and full digital support.”
+                        </p>
+                        <div class="social-links mt-3">
+                            <ul class="list-unstyled d-flex gap-3">
                                 <!-- Instagram -->
-                                <a href="https://www.instagram.com" class="text-secondary" target="_blank">
-                                    <svg width="24" height="24" viewBox="0 0 15 15">
-                                        <use xlink:href="#instagram"></use>
-                                    </svg>
-                                </a>
-
+                                <li>
+                                    <a href="https://www.instagram.com" target="_blank" style="display:inline-flex; align-items:center; justify-content:center; 
+                          width:40px; height:40px; background:#fff; border-radius:50%; 
+                          box-shadow:0 2px 6px rgba(0,0,0,0.1); color:#ecad6f;">
+                                        <svg width="20" height="20" viewBox="0 0 15 15">
+                                            <use xlink:href="#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
                                 <!-- LinkedIn -->
-                                <a href="https://www.linkedin.com" class="text-secondary" target="_blank">
-                                    <svg width="24" height="24" viewBox="0 0 15 15">
-                                        <use xlink:href="#linkedin"></use>
-                                    </svg>
-                                </a>
-
+                                <li>
+                                    <a href="https://www.linkedin.com" target="_blank" style="display:inline-flex; align-items:center; justify-content:center; 
+                          width:40px; height:40px; background:#fff; border-radius:50%; 
+                          box-shadow:0 2px 6px rgba(0,0,0,0.1); color:#ecad6f;">
+                                        <svg width="20" height="20" viewBox="0 0 15 15">
+                                            <use xlink:href="#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
                                 <!-- Mail -->
-                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=techosis.in@gmail.com "
-                                    class="text-secondary">
-                                    <svg width="24" height="24" viewBox="0 0 15 15">
-                                        <use xlink:href="#mail"></use>
-                                    </svg>
-                                </a>
-
-
-
+                                <li>
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=techosis.in@gmail.com"
+                                        target="_blank" style="display:inline-flex; align-items:center; justify-content:center; 
+                          width:40px; height:40px; background:#fff; border-radius:50%; 
+                          box-shadow:0 2px 6px rgba(0,0,0,0.1); color:#ecad6f;">
+                                        <svg width="20" height="20" viewBox="0 0 15 15">
+                                            <use xlink:href="#mail"></use>
+                                        </svg>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-menu footer-menu-002">
-                        <h5 class="widget-title text-uppercase mb-4">Quick Links</h5>
-                        <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
-                            <li class="menu-item">
-                                <a href="#billboard" class="item-anchor">Home</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#about-us" class="item-anchor">About</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#website-development" class=" item-anchor ">Services</a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="#LuxeGems " class="item-anchor ">Portfolio</a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="#Contact " class="item-anchor ">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 ">
-                    <div class="footer-menu footer-menu-003 ">
-                        <h5 class="widget-title text-uppercase mb-4 ">Help & Info</h5>
-                        <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6 ">
-                            <li class="menu-item ">
-                                <a href="# " class="item-anchor ">Track Your Process</a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="# " class="item-anchor ">Service + Manitenance</a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="# " class="item-anchor ">24/7 Support</a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="# " class="item-anchor ">Contact Us</a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="# " class="item-anchor ">Find us easy</a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="index.html " class="item-anchor ">Faqs</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 ">
-                    <div class="footer-menu footer-menu-004 border-animation-left ">
-                        <h5 class="widget-title text-uppercase mb-4 ">Contact Us</h5>
-                        <p>
-                            Do you have any questions or suggestions?
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=techosis.in@gmail.com "
-                                target="_blank " class="item-anchor ">
-                                techosis.in@gmail.com
-                            </a>
-                        </p>
 
-                        <p>Do you need support? Give us a call. <a href="tel:+91 93604 96365 " class="item-anchor ">+91
-                                93604 96365
-                            </a>
-                        </p>
-                    </div>
+                <!-- Quick Links -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="widget-title text-uppercase mb-4 fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled fs-6">
+                        <li><a href="#billboard" class="text-dark text-decoration-none d-block py-1">Home</a></li>
+                        <li><a href="#about-us" class="text-dark text-decoration-none d-block py-1">About</a></li>
+                        <li><a href="#website-development"
+                                class="text-dark text-decoration-none d-block py-1">Services</a></li>
+                        <li><a href="#LuxeGems" class="text-dark text-decoration-none d-block py-1">Portfolio</a></li>
+                        <li><a href="#Contact" class="text-dark text-decoration-none d-block py-1">Contact</a></li>
+                    </ul>
                 </div>
+
+                <!-- Help & Info -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="widget-title text-uppercase mb-4 fw-bold">Help & Info</h5>
+                    <ul class="list-unstyled fs-6">
+                        <li><a href="#" class="text-dark text-decoration-none d-block py-1">Track Your Process</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none d-block py-1">Service + Maintenance</a>
+                        </li>
+                        <li><a href="#" class="text-dark text-decoration-none d-block py-1">24/7 Support</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none d-block py-1">Contact Us</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none d-block py-1">Find us Easy</a></li>
+                        <li><a href="index.html" class="text-dark text-decoration-none d-block py-1">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="widget-title text-uppercase mb-4 fw-bold">Contact Us</h5>
+                    <p class="mb-2">Do you have any questions or suggestions?<br>
+                        <a href="mailto:techosis.in@gmail.com" class="fw-bold text-dark">techosis.in@gmail.com</a>
+                    </p>
+                    <p>Need support? Call us:<br>
+                        <a href="tel:+919360496365" class="fw-bold text-dark">+91 93604 96365</a>
+                    </p>
+                </div>
+
             </div>
         </div>
-
+        <div class="text-center py-3"
+            style="background:#fff; color:#555; font-size:14px; border-top:1px solid rgba(0,0,0,0.1);">
+            © 2025 <b>Techosis</b> | All Rights Reserved
         </div>
     </footer>
+
     <script src="js/jquery.min.js "></script>
     <script src="js/plugins.js "></script>
     <script src="js/SmoothScroll.js "></script>
@@ -1617,16 +1757,33 @@
         });
     </script>
 
+    <script>
+        // Get the select and the "other" input container
+        const serviceSelect = document.getElementById('service');
+        const otherServiceContainer = document.getElementById('other-service-container');
+        const otherServiceInput = document.getElementById('other-service');
+
+        // Add an event listener to the select element
+        serviceSelect.addEventListener('change', (event) => {
+            if (event.target.value === 'other') {
+                // If "Other" is selected, show the input and make it required
+                otherServiceContainer.classList.remove('hidden');
+                otherServiceInput.setAttribute('required', 'required');
+            } else {
+                // If another option is selected, hide the input and remove the required attribute
+                otherServiceContainer.classList.add('hidden');
+                otherServiceInput.removeAttribute('required');
+            }
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+
 
 </body>
 
 
 </html>
-
-
-
-
-
-
-
-
