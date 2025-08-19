@@ -7,16 +7,13 @@ Description: Kaira - Bootstrap 5 Fashion Store HTML CSS Template is specially de
 Version: 1.1
 */
 
-
 /*--------------------------------------------------------------
 This is main CSS file that contains custom style rules used in this template
 --------------------------------------------------------------*/
 
-
 /*------------------------------------*\
     Table of contents
 \*------------------------------------*/
-
 
 /*------------------------------------------------
 CSS STRUCTURE:
@@ -140,7 +137,6 @@ a {
     text-decoration: none;
 }
 
-
 /* container fluid */
 
 .container-fluid {
@@ -185,6 +181,52 @@ a {
 }
 
 
+.flip-card {
+            background-color: transparent;
+            width: 320px;
+            height: 420px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden; /* Safari */
+            backface-visibility: hidden;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flip-card-front {
+            background-color: #ecad6f;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #ecad6f;
+            color: black;
+            transform: rotateY(180deg);
+        }
+
 /* Dropdown */
 
 .dropdown-menu {
@@ -228,7 +270,6 @@ a {
 #offer {
     background-color: #ecad6f;
 }
-
 
 /* list group */
 
@@ -325,7 +366,6 @@ a {
     color: #0056b3;
 }
 
-
 /* Swiper custom navigation */
 
 .icon-arrow {
@@ -337,7 +377,6 @@ a {
     fill: var(--primary-color);
     transition: fill 0.3s ease;
 }
-
 
 /* btn */
 
@@ -368,13 +407,11 @@ a {
     --bs-pagination-border-radius: 0;
 }
 
-
 /* breadcrumb */
 
 .breadcrumb {
     --bs-breadcrumb-item-padding-x: 1em;
 }
-
 
 /* text white */
 
@@ -392,7 +429,6 @@ a {
     --bs-nav-link-active-color: var(--bs-light);
     --bs-navbar-active-color: var(--bs-light);
 }
-
 
 /* accordion */
 
@@ -412,14 +448,12 @@ a {
     --bs-accordion-active-bg: transparent;
 }
 
-
 /* form control */
 
 .form-control:focus {
     border-color: #2B1700;
     box-shadow: 0 0 0 0.25rem#80471C;
 }
-
 
 /* dark theme */
 
@@ -445,9 +479,7 @@ a {
     --bs-bg-opacity: 0.1;
 }
 
-
 /* end of Bootstrap Color Theme */
-
 
 /* preloader */
 
@@ -467,13 +499,11 @@ a {
     height: 0;
 }
 
-
 /* navbar */
 
 .navbar.fixed-top {
     transition: background-color 0.6s ease-out;
 }
-
 
 /* slideshow */
 
@@ -490,11 +520,9 @@ a {
     transition: background-size 1s ease-in-out;
 }
 
-
 /* .slideshow .swiper-slide.swiper-slide-active {
   background-size: 120%;
 } */
-
 
 /* fade in */
 
@@ -507,7 +535,6 @@ a {
 .slideshow.fade-in .swiper-slide.swiper-slide-active .banner-content {
     opacity: 1;
 }
-
 
 /* slide in */
 
@@ -538,7 +565,6 @@ a {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
-
 
 /* swiper slide-clip */
 
@@ -583,7 +609,6 @@ a {
     }
 }
 
-
 /* swipe animation */
 
 .swipe-up {
@@ -595,7 +620,6 @@ a {
     animation: 1s swipe-up forwards;
 }
 
-
 /*.down-leave-active { animation: 1s down-leave; }*/
 
 @keyframes swipe-up {
@@ -606,7 +630,6 @@ a {
         clip-path: inset(0);
     }
 }
-
 
 /* polygon */
 
@@ -626,7 +649,6 @@ a {
         clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     }
 }
-
 
 /* open-up */
 
@@ -655,7 +677,6 @@ a {
     animation-delay: 1s;
     /* animation-delay: data(swipe-delay); */
 }
-
 
 /* Text Effects */
 
@@ -686,7 +707,6 @@ a {
     --easing: cubic-bezier(.5, 0, .53, 1);
 }
 
-
 /* fade right */
 
 .txt-fx.fade-right .letter {
@@ -700,7 +720,6 @@ a {
     opacity: 1;
 }
 
-
 /* slide up */
 
 .txt-fx.slide-up .letter {
@@ -712,7 +731,6 @@ a {
 .aos-animate .txt-fx.slide-up .letter {
     transform: translate3d(0, 0, 0);
 }
-
 
 /* domino */
 
@@ -726,7 +744,6 @@ a {
 .aos-animate .txt-fx.domino .letter {
     transform: rotateY(0);
 }
-
 
 /* zoom */
 
@@ -764,7 +781,6 @@ a {
     opacity: 1;
     transform: translateY(0);
 }
-
 
 /** Search Popup
 --------------------------------------------------------------*/
@@ -822,7 +838,6 @@ a {
     color: #333;
     padding-right: 40px;
 }
-
 
 /* --- Search Form & Input --- */
 
@@ -977,9 +992,7 @@ a {
     width: 28px;
 }
 
-
 /* Swiper */
-
 
 /* - Swiper Slide Arrows 1
 ------------------------------------------------------------- */
@@ -1024,7 +1037,6 @@ a {
     }
 }
 
-
 /** Swiper Slide Arrows 2
 --------------------------------------------------------------*/
 
@@ -1063,7 +1075,6 @@ a {
     height: 100%;
 }
 
-
 /** Swiper Slide Arrows with background 3
 --------------------------------------------------------------*/
 
@@ -1072,7 +1083,6 @@ a {
     height: 90px;
     border-radius: 50%;
 }
-
 
 /*--- Image hover Effects
 -----------------------------------------------*/
@@ -1104,7 +1114,6 @@ a {
 .image-zoom-effect:hover img {
     transform: scale(1.1);
 }
-
 
 /* - Border Hover Effects
 ------------------------------------------------------------- */
@@ -1141,14 +1150,12 @@ a {
     background: var(--bs-primary);
 }
 
-
 /* - Border Hover No Effects
 ------------------------------------------------------------- */
 
 .border-animation .no-effect a:after {
     background: none;
 }
-
 
 /* - Border Hover Effects 2
 ------------------------------------------------------------- */
@@ -1180,7 +1187,6 @@ a {
     width: 100%;
 }
 
-
 /* background */
 
 .background {
@@ -1200,7 +1206,6 @@ a {
     background: url(images/newsletter-image.jpg) no-repeat;
 }
 
-
 /* large text */
 
 .title-xlarge {
@@ -1213,7 +1218,6 @@ a {
     left: 0;
     z-index: 0;
 }
-
 
 /*--------------------------------------------------------------
 /** 7.8 Video Section
@@ -1259,7 +1263,6 @@ a {
         margin: 0 auto;
     }
 }
-
 
 /*--------------------------------------------------------------
 /** 7.9 Testimonial Slider
@@ -1329,12 +1332,10 @@ a {
             padding: 2.5rem; /* Equivalent of p-10 */
 
 border-radius: 1rem;
-
 /* Equivalent of rounded-xl */
 
 box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-
 /* Equivalent of shadow-lg */
 
 */
@@ -1345,14 +1346,12 @@ box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     color: #2B1700;
 }
 
-
 /* Change swiper pagination dots color */
 
 #Feedback .swiper-pagination-bullet {
     background: #2B1700 !important;
     opacity: 0.6;
 }
-
 
 /* Active (current) dot */
 
@@ -1420,7 +1419,6 @@ box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     }
 }
 
-
 /** 7.13 Instagram
 --------------------------------------------------------------*/
 
@@ -1440,7 +1438,6 @@ box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     opacity: 0;
     transition: 0.6s ease-out;
 }
-
 
 /* Link Effect
  - Place anywhere you want your link to animate
@@ -1482,7 +1479,6 @@ box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     transform: translateY(0%);
 }
 
-
 /* product item */
 
 .product-item .btn-wishlist {
@@ -1502,7 +1498,6 @@ box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     opacity: 1;
 }
 
-
 /* rotating text */
 
 .text-rotate {
@@ -1518,9 +1513,7 @@ box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     }
 }
 
-
 /* single product */
-
 
 /* product-thumbnail-slider */
 
@@ -1547,12 +1540,10 @@ box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     }
 }
 
-
 /* 
 .product-thumbnail-slider .swiper-slide {
   height: 200px;
 } */
-
 
 /* ------ Quantity ------*/
 
@@ -1593,7 +1584,6 @@ box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     display: none;
 }
 
-
 /*--------------------------------------------------------------
 /** Single Product
 --------------------------------------------------------------*/
@@ -1610,7 +1600,6 @@ box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
 .product-preview .swiper-slide {
     padding-bottom: 15px;
 }
-
 
 /*---- Single Product Information ----------*/
 
@@ -1683,7 +1672,6 @@ box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     border: 2px solid var(--bs-gray);
 }
 
-
 /*---- Single Product Accordion ----------*/
 
 .review-style1 .review-item .rating-container .rating {
@@ -1693,7 +1681,6 @@ box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
 .review-style1 .review-item span.author-name {
     font-weight: 600;
 }
-
 
 /* button */
 
@@ -1748,7 +1735,6 @@ a.btn-link.text-light:after {
     background-color: var(--bs-light);
 }
 
-
 /* color options */
 
 .form-check {
@@ -1766,7 +1752,6 @@ a.btn-link.text-light:after {
     user-select: none;
 }
 
-
 /* Hide the browser's default radio button */
 
 .form-check-label input {
@@ -1774,7 +1759,6 @@ a.btn-link.text-light:after {
     opacity: 0;
     cursor: pointer;
 }
-
 
 /* Create a custom radio button */
 
@@ -1789,20 +1773,17 @@ a.btn-link.text-light:after {
     border-radius: 50%;
 }
 
-
 /* On mouse-over, add a grey background color */
 
 .form-check-label:hover input~.checkmark {
     background-color: #2B1700;
 }
 
-
 /* When the radio button is checked, add a blue background */
 
 .form-check-label input:checked~.checkmark {
     background-color: #A226F3;
 }
-
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
 
@@ -1812,13 +1793,11 @@ a.btn-link.text-light:after {
     display: none;
 }
 
-
 /* Show the indicator (dot/circle) when checked */
 
 .form-check-label input:checked~.checkmark:after {
     display: block;
 }
-
 
 /* Style the indicator (dot/circle) */
 
@@ -1846,7 +1825,6 @@ a.btn-link.text-light:after {
 .form-check-label.aqua input~.checkmark {
     background-color: #779B9D;
 }
-
 
 /* sidebar accordion */
 
@@ -1877,7 +1855,6 @@ a.btn-link.text-light:after {
     border: 1px solid#80471C;
 }
 
-
 /* image zoom */
 
 .image-zoom {
@@ -1905,7 +1882,6 @@ a.btn-link.text-light:after {
     stroke: red;
 }
 
-
 /* --- Search Button on Page --- */
 
 .open-search-btn {
@@ -1927,7 +1903,6 @@ a.btn-link.text-light:after {
     right: 0;
     color: #b0b0b0;
 }
-
 
 /* --- Search Results Dropdown (Hidden by Default) --- */
 
@@ -1958,7 +1933,6 @@ a.btn-link.text-light:after {
     background-color: #f5f5f5;
     transform: translateX(5px);
 }
-
 
 /* --- Content Lists --- */
 
